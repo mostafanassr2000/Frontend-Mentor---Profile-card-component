@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+header {
+    height: 100vh;
+    background-color: var(--dark-cyan);
+    position: relative;
+    overflow: hidden;
+}
+
+header>* {
+    position: absolute;
+}
+
+.top-circle {
+    top: -90%;
+    right: 50%;
+}
+
+.bottom-circle {
+    top: 55%;
+    left: 45%;
+}
+
+.card-container {
+    background-color: white;
+    z-index: 1;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-background-img {
+    width: 100%;
+}
+
+.card-img-container {
+    border-radius: 100%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin-top: -3.5rem;
+}
+
+.card-img {
+    display: block;
+}
+
+.card-personality-info {
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+.card-name {
+    padding-bottom: 0.5rem;
+}
+
+.card-age {
+    padding-left: 0.5rem;
+}
+
+.card-age,
+.card-location {
+    opacity: 70%;
+}
+
+.card-divider {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.card-social-details {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.card-social-details>section {
+    padding: 0.5rem 0.5rem;
+}
+
+.card-social-details>section>h5 {
+    opacity: 70%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 0.4rem;
+}
